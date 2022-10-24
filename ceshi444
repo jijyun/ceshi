@@ -1,0 +1,24 @@
+# 前端传来字典，取字符串格式的v转换成int类型（str_info:字典，key_1:key）
+def str_convert_int(str_info, key_1):
+    str1 = str_info[key_1] if key_1 in str_info else ''
+    if str1:
+        str1 = int(str1)
+        str_info[key_1] = str1
+        return str_info
+    else:
+        pass
+    str_info[key_1] = str1
+    return str_info
+
+
+# 前端传来字典，取字符串格式的v转换成float类型传递给第三方
+def str_convert_float(str_info, key_2):
+    str1 = str_info[key_2] if key_2 in str_info else ''
+    if str1:
+        str1 = float(str1)
+        str_info[key_2] = str1
+        return str_info
+    else:
+        pass
+    str_info[key_2] = str1
+    return str_info
